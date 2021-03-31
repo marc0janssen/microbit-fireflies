@@ -23,8 +23,6 @@ def fixPixelBug(brightness):
         return brightness
 
 
-ticker = 0
-
 while True:
     sleep(50)
 
@@ -40,4 +38,3 @@ while True:
 
         if fixPixelBug(display.get_pixel(x, y)) > 0:
             display.set_pixel(x, y, fixPixelBug(display.get_pixel(x, y)) - 1)
-
