@@ -1,9 +1,11 @@
 # Write your code here :-)
-from microbit import *
+from microbit import display, sleep
 import random
 
 # This fucntions fixes the "display.get_pixel" bug.
 # a full bright led does not return a "9" but a "255".
+
+
 def fixPixelBug(brightness):
     if brightness == 4:
         return 3
